@@ -1,4 +1,6 @@
+# for task_4 and task_4a
 
+#from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium import webdriver
 from fixture.session import SessionHelper
 
@@ -6,6 +8,7 @@ from fixture.session import SessionHelper
 class Application:
 
     def __init__(self, browser, base_url):
+        #self.wd = WebDriver(capabilities={"marionette": False})
 
         if browser == 'firefox':
             self.wd = webdriver.Firefox()
