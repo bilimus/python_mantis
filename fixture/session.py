@@ -8,6 +8,7 @@ class SessionHelper:
     def login(self, username, password):
         wd = self.app.wd
         self.app.open_home_page()
+        time.sleep(3)
         #wd.find_element_by_id("header").click()
         wd.find_element_by_name("username").click()
         wd.find_element_by_name("username").clear()
